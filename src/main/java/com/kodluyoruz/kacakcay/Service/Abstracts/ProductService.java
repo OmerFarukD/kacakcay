@@ -10,5 +10,6 @@ public interface ProductService {
     String add(AddedProductRequestDto addedProductRequestDto);
     void delete(int id);
     List<ProductResponseDto> getAll();
+    List<ProductResponseDto> getAllByCategoryId(long id);
 
 }

@@ -1,6 +1,8 @@
 package com.kodluyoruz.kacakcay.Models;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
@@ -9,9 +11,8 @@ import java.util.List;
 @Table(name = "categories")
 @Data
 public class Category {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "category_id")
     private long categoryId;
 

@@ -3,17 +3,23 @@ package com.kodluyoruz.kacakcay.Models;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Table(name = "products")
 @Data
 public class Product {
 
+   /* public  Product(){
+
+    }*/
+    // Validation Rules
+
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy =GenerationType.IDENTITY)
     @Column(name = "product_id")
     private int productId;
 
